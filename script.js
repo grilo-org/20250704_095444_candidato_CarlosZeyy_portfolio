@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Efeito de texto dinamico
-const words = ["Desenvolvedor", "Designer", "Criativo", "Freelancer"];
+const words = ["Desenvolvedor Web Full-Stack"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
