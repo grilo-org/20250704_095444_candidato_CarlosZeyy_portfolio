@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Moises</title>
+</head>
+
+<body>
+    <!-- Fundo de estrelas -->
+    <div class="stars"></div>
+
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <!-- <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <span>Carlos Moises</span>
+                </div> -->
+                <div class="links">
+                    <a href="#about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250">Sobre</a>
+                    <a href="#projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="350">Projetos</a>
+                    <a href="#contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">Contato</a>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onClick="hamburg()" data-aos="zoom-in" data-aos-duration="1500"></i>
+                <div class="dark-mode" onclick="lightDarkMode()">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
+            <div>
+                <div class="dropdown" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="550">
+                    <div class="links">
+                        <a href="#about">Sobre</a>
+                        <a href="#projects">Projetos</a>
+                        <a href="#contact">Contato</a>
+                        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção principal -->
+    <main>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                    <img src="./src//images/profile-img.jpeg"
+                        alt="Imagem de Carlos Moises gerada com IA no estilo de desenho ghibli">
+                </div>
+                <div class="content">
+                    <h1 id="dynamic-text">Olá, eu sou Carlos Moises</h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                        <span class="typewriter-text changing-text"></span><span class="cursor typewriter-text">|</span>
+                        <label for=""></label>
+                    </div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+                        Sou desenvolvedor Web Full Stack, tenho conhecimentos em HTML, CSS, JavaScript, React, NodeJS,
+                        MongoDB, Express.
+                    </p>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Caso queira conhecer mais
+                        sobre mim, entre em contato ou clique nos botões abaixo para acessar
+                        meu Likedin e GitHub</p>
+                    <div class="social-links">
+                        <a href="https://github.com/CarlosZeyy" data-aos="fade-up" data-aos-duration="1500"
+                            data-aos-delay="1300" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlos-moises-211205203/" data-aos="fade-up"
+                            data-aos-duration="1500" data-aos-delay="1500" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">
+                        <a href="#contact"><button>Entre em contato</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção Sobre -->
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><span>Sobre
+                        mim</span>
+                </div>
+                <div class="about-details">
+                    <div class="left" data-aos="fade-right" data-aos-duration="1500 " data-aos-delay="300">
+                        <img src="./src/images/profile-img.jpeg"
+                            alt="Imagem de Carlos Moises gerada com IA no estilo de desenho ghibli">
+                    </div>
+                    <div class="right">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                            Carlos Moises</div>
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">
+                            💻 desenvolvendo aplicações front-end e back-end.
+                        </p>
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">
+                            🎓 Cursando Análise e Desenvovimento de sistemas.
+                        </p>
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">
+                            💡 Interesse em desenvovimento web full stack.
+                        </p>
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">
+                            🚀 Buscando oportunidade na área de programação.
+                        </p>
+                        <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="600">
+                            <a href="./src/cv/Carlos-Moises-CV.pdf" download="Carlos-Moises-CV.pdf"><button>Baixar
+                                    CV</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seção Projetos -->
+        <section class="projects" id="projects">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Projetos</span>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="./src/ecommerce/PrintEcommerce1.png" alt="Projeto 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Ecommerce MERN</h3>
+                            <div class="technologies">
+                                <span class="react">React</span>
+                                <span class="tailwind">Tailwind</span>
+                                <span class="mongodb">MongoDB</span>
+                                <span class="expressjs">ExpressJS</span>
+                                <span class="nodejs">NodeJS</span>
+                                <span class="vite">Vite</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/CarlosZeyy/ecommerce-mern" target="_blank" class="btn-repo">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="https://ecommerce-mern-y3y7.onrender.com/" target="_blank" class="btn-demo">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <button class="btn-gallery" onclick="openGallery(1)">
+                                    <i class="fas fa-images"></i> Galeria
+                                </button>
+                            </div>
+                            <div class="description">
+                                <p>Projeto de Ecommerce MERN (MongoDB, ExpressJS, React e NodeJS) com Vite.</p>
+                                <p>Tecnologias: React, Tailwind, MongoDB, ExpressJS, NodeJS, JWT, Redis, Axios, Git,
+                                    Vite, GitHub, Render.</p>
+                                <p>Integração com o Stripe para pagamentos.</p>
+                                <p>Responsivo para dispositivos móveis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="./src/spotify/PrintSpotity1.png" alt="Projeto 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Clone Spotify</h3>
+                            <div class="technologies">
+                                <span class="react">React</span>
+                                <span class="css">CSS</span>
+                                <span class="mongodb">MongoDB</span>
+                                <span class="expressjs">ExpressJS</span>
+                                <span class="nodejs">NodeJS</span>
+                                <span class="vite">Vite</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/CarlosZeyy/frontendSpotifyClone" target="_blank"
+                                    class="btn-repo">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="https://frontend-spotify-clone-sepia.vercel.app/" target="_blank"
+                                    class="btn-demo">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <button class="btn-gallery" onclick="openGallery(2)">
+                                    <i class="fas fa-images"></i> Galeria
+                                </button>
+                            </div>
+                            <div class="description">
+                                <p>Um projeto de clone do Spotify usando React, CSS, NodeJS, MongoDB, ExpressJS e Vite.
+                                </p>
+                                <p>Tecnologias: React, CSS, NodeJS, MongoDB, ExpressJS, Axios, Cors e Vite.</p>
+                                <p>Responsivo para dispositivos móveis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="./src/jogoDaVelha/PrintTicTacToe1.png" alt="Projeto Jogo da velha">
+                        </div>
+                        <div class="project-info">
+                            <h3>Jogo da Velha <br> Tic-Tac-Toe</h3>
+                            <div class="technologies">
+                                <span class="html">HTML</span>
+                                <span class="css">CSS</span>
+                                <span class="js">JavaScript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/CarlosZeyy/TicTacToe-JogoDaVelha" target="_blank"
+                                    class="btn-repo">
+                                    <i class="fab fa-github"></i> Código
+                                </a>
+                                <a href="https://tic-tac-toe-jogo-da-velha-seven.vercel.app" target="_blank"
+                                    class="btn-demo">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                                <button class="btn-gallery" onclick="openGallery(3)">
+                                    <i class="fas fa-images"></i> Galeria
+                                </button>
+                            </div>
+                            <div class="description">
+                                <p>O jogo da velha em HTML, CSS e JavaScript</p>
+                                <p>Responsivo para dispositivos móveis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slot para futuro projeto -->
+                    <div class="project-card coming-soon" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="500">
+                        <div class="project-image">
+                            <div class="coming-soon-overlay">
+                                <span>Em Breve</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Em Breve...</h3>
+                            <div class="technologies">
+                                <span>?</span>
+                                <span>?</span>
+                                <span>?</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn-coming-soon" disabled>
+                                    <i class="fab fa-github"></i> Código
+                                </button>
+                                <button class="btn-coming-soon" disabled>
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </button>
+                                <button class="btn-coming-soon" disabled>
+                                    <i class="fas fa-images"></i> Galeria
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal da Galeria -->
+        <div id="galleryModal" class="modal">
+            <span class="close" onclick="closeGallery()">&times;</span>
+            <div class="modal-content">
+                <div class="gallery-slide">
+                    <img id="galleryImage" src="" alt="Imagem do Projeto">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <!-- Seção Contato -->
+        <section class="contact" id="contact">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span>Me contate</span>
+                </div>
+                <div class="text">
+                    <form action="https://formsubmit.co/ajax/dace3d98d6f03f739805eeb833c10ae6" method="POST" data-form>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" required></textarea>
+                        <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                            <button type="submit" data-button>Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodape -->
+    <footer id="#contact">
+        <div class="text">
+            <span>Desenvolvido por <a href="#">Carlos Moises</a> &copy; 2025 Todos os direitos reservados</span>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top hidden"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
