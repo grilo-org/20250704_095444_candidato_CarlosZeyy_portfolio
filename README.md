@@ -36,6 +36,7 @@ Este é meu portfólio profissional, desenvolvido como uma vitrine para meus pro
 🔧 Detalhes sobre habilidades técnicas
 
 🛠️ Tecnologias Utilizadas
+
 HTML5
 
 CSS3
