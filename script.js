@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Efeito de texto dinamico
-const words = ["Desenvolvedor Web Full-Stack"];
+const words = ["Desenvolvedor", "Designer", "Criativo", "Freelancer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -84,30 +84,30 @@ let currentGallery = 1;
 let currentSlide = 0;
 const projectsGalleries = {
   1: [
-    "./src/ecommerce/PrintEcommerce1.png",
-    "./src/ecommerce/PrintEcommerce3.png",
-    "./src/ecommerce/PrintEcommerce2.png",
-    "./src/ecommerce/PrintEcommerce4.png",
-    "./src/ecommerce/PrintEcommerce5.png",
-    "./src/ecommerce/PrintEcommerce6.png",
-    "./src/ecommerce/PrintEcommerce7.png",
-    "./src/ecommerce/PrintEcommerce8.png",
-    "./src/ecommerce/PrintEcommerce9.png",
-    "./src/ecommerce/PrintEcommerce10.png",
-    "./src/ecommerce/PrintEcommerce11.png",
-    "./src/ecommerce/PrintEcommerce12.png",
+    "./src/PrintEcommerce1.png",
+    "./src/PrintEcommerce2.png",
+    "./src/PrintEcommerce3.png",
+    "./src/PrintEcommerce4.png",
+    "./src/PrintEcommerce5.png",
+    "./src/PrintEcommerce6.png",
+    "./src/PrintEcommerce7.png",
+    "./src/PrintEcommerce8.png",
+    "./src/PrintEcommerce9.png",
+    "./src/PrintEcommerce10.png",
+    "./src/PrintEcommerce11.png",
+    "./src/PrintEcommerce12.png",
   ],
   2: [
-    "./src/spotify/PrintSpotity1.png",
-    "./src/spotify/PrintSpotity2.png",
-    "./src/spotify/PrintSpotity3.png",
-    "./src/spotify/PrintSpotity4.png",
+    "./src/PrintSpotity1.png",
+    "./src/PrintSpotity2.png",
+    "./src/PrintSpotity3.png",
+    "./src/PrintSpotity4.png",
   ],
   3: [
-    "./src/jogoDaVelha/PrintTicTacToe1.png",
-    "./src/jogoDaVelha/PrintTicTacToe2.png",
-    "./src/jogoDaVelha/PrintTicTacToe3.png",
-    "./src/jogoDaVelha/PrintTicTacToe4.png",
+    "./src/PrintTicTacToe1.png",
+    "./src/PrintTicTacToe2.png",
+    "./src/PrintTicTacToe3.png",
+    "./src/PrintTicTacToe4.png",
   ],
 };
 
@@ -219,7 +219,7 @@ class FormSubmit {
   }
 
   init() {
-    if (this.form) this.formButton.addEventListener("submit", this.sendForm);
+    if (this.form) this.formButton.addEventListener("click", this.sendForm);
     return this;
   }
 }
@@ -232,17 +232,3 @@ const formSubmit = new FormSubmit({
 });
 
 formSubmit.init();
-
-// * Botão de voltar ao topo
-
-const backTopBtn = document.getElementById("back-to-top");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    backTopBtn.classList.remove("hidden");
-  } else {
-    backTopBtn.classList.add("hidden");
-  }
-});
-
-backTopBtn.onclick = () => window.scrollTo({ top: 0 });
